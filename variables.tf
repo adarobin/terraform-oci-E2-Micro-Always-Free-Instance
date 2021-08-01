@@ -23,3 +23,16 @@ variable "compartment_id" {
 variable "availability_domain" {
   type = string
 }
+
+variable "operating_system" {
+  type = string
+
+  validation {
+    condition     = contains(["Canonical Ubuntu", "CentOS", "Oracle Autonomous Linux", "Oracle Linux", "Oracle Linux Cloud Developer"], var.operating_system)
+    error_message = "The value of operating_system must be one of \"Canonical Ubuntu\", \"CentOS\", \"Oracle Autonomous Linux\", \"Oracle Linux\", or \"Oracle Linux Cloud Developer\"."
+  }
+}
+
+variable "operating_system_version" {
+  type = string
+}

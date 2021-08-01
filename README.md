@@ -1,6 +1,6 @@
-# Oracle Cloud Always Free Ampere A1 Compute instance
+# Oracle Cloud Always Free Micro instance
 
-Terraform module which creates an Always Free Ampere A1 Compute instance in Oracle Cloud.
+Terraform module which creates an Always Free Micro instance in Oracle Cloud.
 
 This module attempts to limit inputs to valid values for the Always Free instance.
 

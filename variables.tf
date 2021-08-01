@@ -44,7 +44,8 @@ variable "operating_system_version" {
 }
 
 variable "subnet_id" {
-  type = string
+  description = "The OCID of the subnet to create the VNIC in."
+  type        = string
 }
 
 variable "ssh_authorized_keys" {

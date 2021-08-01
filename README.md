@@ -43,7 +43,7 @@ No modules.
 | <a name="input_operating_system"></a> [operating\_system](#input\_operating\_system) | The Operating System of the platform image to use. Valid values are "Canonical Ubuntu", "CentOS", "Oracle Autonomous Linux", "Oracle Linux", or "Oracle Linux Cloud Developer" | `string` | n/a | yes |
 | <a name="input_operating_system_version"></a> [operating\_system\_version](#input\_operating\_system\_version) | The version of the Operating System specified in `operating_system`. | `string` | n/a | yes |
 | <a name="input_ssh_authorized_keys"></a> [ssh\_authorized\_keys](#input\_ssh\_authorized\_keys) | The public SSH key(s) that should be authorized for the default user. | `string` | n/a | yes |
-| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | n/a | `string` | n/a | yes |
+| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | The OCID of the subnet to create the VNIC in. | `string` | n/a | yes |
 | <a name="input_user_data"></a> [user\_data](#input\_user\_data) | User data passed to cloud-init when the instance is started. Defaults to `null`. | `string` | `null` | no |
 
 ## Outputs

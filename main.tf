@@ -29,4 +29,3 @@ resource "oci_core_instance" "micro" {
     user_data           = var.user_data
   }
 }
-

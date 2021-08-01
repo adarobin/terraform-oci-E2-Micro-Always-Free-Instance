@@ -14,8 +14,9 @@ resource "oci_core_instance" "micro" {
   shape               = "VM.Standard.E2.1.Micro"
 
   create_vnic_details {
-    hostname_label = var.hostname
-    subnet_id      = var.subnet_id
+    hostname_label   = var.hostname
+    subnet_id        = var.subnet_id
+    assign_public_ip = var.assign_public_ip
   }
 
   source_details {

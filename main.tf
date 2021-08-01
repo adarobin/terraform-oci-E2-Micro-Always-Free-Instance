@@ -7,7 +7,7 @@ data "oci_core_images" "os" {
   sort_order               = "DESC"
 }
 
-resource "oci_core_instance" "a1" {
+resource "oci_core_instance" "micro" {
   availability_domain = var.availability_domain
   compartment_id      = var.compartment_id
   display_name        = var.name

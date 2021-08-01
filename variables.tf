@@ -36,3 +36,7 @@ variable "operating_system" {
 variable "operating_system_version" {
   type = string
 }
+
+variable "subnet_id" {
+  type = string
+}

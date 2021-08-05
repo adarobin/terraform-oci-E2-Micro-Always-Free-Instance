@@ -30,3 +30,14 @@ resource "oci_core_instance" "micro" {
     user_data           = var.user_data
   }
 }
+
+data "oci_core_vnic_attachments" "micro_vnic_attachments" {
+  compartment_id = var.compartment_id
+  instance_id    = oci_core_instance.micro.id
+}
+
+resource "oci_core_ipv6" "ipv6_address" {
+  count   = var.assign_ipv6_address ? 1 : 0
+  vnic_id = data.oci_core_vnic_attachments.micro_vnic_attachments.vnic_attachments[0].id
+}
+

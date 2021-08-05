@@ -38,6 +38,6 @@ data "oci_core_vnic_attachments" "micro_vnic_attachments" {
 
 resource "oci_core_ipv6" "ipv6_address" {
   count   = var.assign_ipv6_address ? 1 : 0
-  vnic_id = data.oci_core_vnic_attachments.micro_vnic_attachments.vnic_attachments[0].id
+  vnic_id = data.oci_core_vnic_attachments.micro_vnic_attachments.vnic_attachments[0].vnic_id
 }
 

@@ -44,6 +44,7 @@ No modules.
 | <a name="input_boot_volume_size_in_gbs"></a> [boot\_volume\_size\_in\_gbs](#input\_boot\_volume\_size\_in\_gbs) | A custom size for the boot volume. Must be between 50 and 200. If not set, defaults to the size of the image which is around 46 GB. | `any` | `null` | no |
 | <a name="input_compartment_id"></a> [compartment\_id](#input\_compartment\_id) | The OCID of the compartment containing the instance. | `string` | n/a | yes |
 | <a name="input_hostname"></a> [hostname](#input\_hostname) | The hostname of the instance. | `string` | n/a | yes |
+| <a name="input_nsg_ids"></a> [nsg\_ids](#input\_nsg\_ids) | A list of Network Security Group OCIDs to attach to the primary vnic. | `list(string)` | `[]` | no |
 | <a name="input_operating_system"></a> [operating\_system](#input\_operating\_system) | The Operating System of the platform image to use. Valid values are "Canonical Ubuntu", "CentOS", "Oracle Autonomous Linux", "Oracle Linux", or "Oracle Linux Cloud Developer" | `string` | n/a | yes |
 | <a name="input_operating_system_version"></a> [operating\_system\_version](#input\_operating\_system\_version) | The version of the Operating System specified in `operating_system`. | `string` | n/a | yes |
 | <a name="input_ssh_authorized_keys"></a> [ssh\_authorized\_keys](#input\_ssh\_authorized\_keys) | The public SSH key(s) that should be authorized for the default user. | `string` | n/a | yes |

@@ -1,3 +1,11 @@
+## 0.3.0 (April 18, 2022)
+
+IMPROVEMENTS:
+
+* Ignore changes to image source after initial creation
+* Use OCI provider from oracle instead of hashicorp in the registry 
+
+
 ## 0.2.0 (August 4, 2021)
 
 IMPROVEMENTS:

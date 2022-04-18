@@ -30,6 +30,15 @@ resource "oci_core_instance" "micro" {
     ssh_authorized_keys = var.ssh_authorized_keys
     user_data           = var.user_data
   }
+
+  lifecycle {
+    ignore_changes = [
+      # Ignore changes to source_details, so that instance isn't
+      # recreated when a new image releases. Also allows for easy
+      # resource import.
+      source_details,
+    ]
+  }
 }
 
 data "oci_core_vnic_attachments" "micro_vnic_attachments" {

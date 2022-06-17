@@ -1,3 +1,9 @@
+## 0.4.0 (June 17, 2022)
+
+IMPROVEMENTS:
+
+* Ignore changes to metadata after initial creation
+
 ## 0.3.0 (April 18, 2022)
 
 IMPROVEMENTS:

@@ -37,6 +37,9 @@ resource "oci_core_instance" "micro" {
       # recreated when a new image releases. Also allows for easy
       # resource import.
       source_details,
+      # Ignore changes to metadata, so that the instance isn't recreated
+      # if the content of passed in changes.
+      metadata,
     ]
   }
 }
